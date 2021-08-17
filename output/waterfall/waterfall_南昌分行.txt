@@ -1,0 +1,47 @@
+
+    option = {
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'category',
+            axisLabel:{interval:0, fontSize:9},
+            splitLine: {show: false},
+            data: ['工资总额', 'T+0', 'T+1', 'T+2', 'T+3', 'T+4', 'T+5', 'T+6', 'T+7', 'T+7~T+25']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                name: '辅助',
+                type: 'bar',
+                stack: '总量',
+                itemStyle: {
+                    barBorderColor: 'rgba(0,0,0,0)',
+                    color: 'rgba(0,0,0,0)'
+                },
+                emphasis: {
+                    itemStyle: {
+                        barBorderColor: 'rgba(0,0,0,0)',
+                        color: 'rgba(0,0,0,0)'
+                    }
+                },
+                data: [0, 1.4299999999999997, 1.15, 1.0099999999999998, 0.9599999999999997, 0.8799999999999997, 0.8099999999999996, 0.7799999999999996, 0.7799999999999996, 0.5799999999999996]
+            },
+            {
+                name: '主要数据',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    show: true,
+                    position: 'inside'
+                },
+                data: [2.03, 0.6, 0.28, 0.14, 0.05, 0.08, 0.07, 0.03, {'value': 0.01, 'itemStyle': {'color': '#a90000'}}, 0.2]
+            }
+        ]
+    }
+    
