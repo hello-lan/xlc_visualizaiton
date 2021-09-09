@@ -1,0 +1,23 @@
+
+    option = {
+        tooltip: {
+            trigger: 'item',
+            triggerOn: 'mousemove'
+        },
+        series: [
+            {
+                type: 'sankey',
+                emphasis: {
+                    focus: 'adjacency'
+                },
+                nodeAlign: 'left',
+                data: [{'name': '消费', 'itemStyle': {'color': '#33CC66'}, 'value': '14.29%'}, {'name': '第三方转账', 'itemStyle': {'color': '#99CC66'}, 'value': '5.08%'}, {'name': '天天基金理财', 'itemStyle': {'color': '#FF9999'}, 'value': '0.86%'}, {'name': '美团', 'itemStyle': {'color': '#FFA500'}, 'value': '0.04%'}, {'name': '同行异名', 'itemStyle': {'color': '#6699CC'}, 'value': '9.24%'}, {'name': '支付宝', 'itemStyle': {'color': '#3366FF'}, 'value': '6.53%'}, {'name': '他行理财', 'itemStyle': {'color': '#00CCCC'}, 'value': '1.36%'}, {'name': '微信理财', 'itemStyle': {'color': '#33FF33'}, 'value': '0.38%'}, {'name': '微信', 'itemStyle': {'color': '#00FF00'}, 'value': '2.46%'}, {'name': '理财', 'itemStyle': {'color': '#669999'}, 'value': '16.28%'}, {'name': '其他消费', 'itemStyle': {'color': '#66FF00'}, 'value': '4.90%'}, {'name': '同行同名', 'itemStyle': {'color': '#6B8E23'}, 'value': '4.58%'}, {'name': '总资金', 'itemStyle': {'color': '#0099CC'}, 'value': '100%'}, {'name': '取款', 'itemStyle': {'color': '#6699FF'}, 'value': '5.65%'}, {'name': '其他', 'itemStyle': {'color': '#CC9966'}, 'value': '1.14%'}, {'name': '京东', 'itemStyle': {'color': '#99CC66'}, 'value': '0.36%'}, {'name': '行内理财', 'itemStyle': {'color': '#99CC99'}, 'value': '3.56%'}, {'name': '支付宝理财', 'itemStyle': {'color': '#0066CC'}, 'value': '4.11%'}, {'name': '其他理财', 'itemStyle': {'color': '#9999CC'}, 'value': '6.01%'}, {'name': '购房', 'itemStyle': {'color': '#CCCCFF'}, 'value': '0.98%'}, {'name': '转账', 'itemStyle': {'color': '#FF9900'}, 'value': '52.95%'}, {'name': '跨行同名', 'itemStyle': {'color': '#99CC00'}, 'value': '18.14%'}, {'name': '跨行异名', 'itemStyle': {'color': '#6699CC'}, 'value': '15.92%'}, {'name': '还款', 'itemStyle': {'color': '#99CC66'}, 'value': '8.72%'}],
+                links: [{'target': '其他', 'value': 0.0114264000951944, 'source': '总资金'}, {'target': '取款', 'value': 0.0564770829125374, 'source': '总资金'}, {'target': '消费', 'value': 0.14286311748746058, 'source': '总资金'}, {'target': '理财', 'value': 0.1627706051072925, 'source': '总资金'}, {'target': '购房', 'value': 0.00979352495211194, 'source': '总资金'}, {'target': '转账', 'value': 0.5294889471076886, 'source': '总资金'}, {'target': '还款', 'value': 0.0871803223377147, 'source': '总资金'}, {'source': '消费', 'target': '京东', 'value': 0.00357514596732287}, {'source': '消费', 'target': '其他消费', 'value': 0.0489808145053509}, {'source': '消费', 'target': '微信', 'value': 0.0245629941734571}, {'source': '消费', 'target': '支付宝', 'value': 0.0653284945624211}, {'source': '消费', 'target': '美团', 'value': 0.000415668278908626}, {'source': '理财', 'target': '他行理财', 'value': 0.0135976130597345}, {'source': '理财', 'target': '其他理财', 'value': 0.0600707205881635}, {'source': '理财', 'target': '天天基金理财', 'value': 0.00863158888067479}, {'source': '理财', 'target': '微信理财', 'value': 0.00376170526270859}, {'source': '理财', 'target': '支付宝理财', 'value': 0.0410746811270039}, {'source': '理财', 'target': '行内理财', 'value': 0.0356342961890072}, {'source': '转账', 'target': '第三方转账', 'value': 0.0508002360779805}, {'source': '转账', 'target': '同行同名', 'value': 0.0457763788784847}, {'source': '转账', 'target': '同行异名', 'value': 0.0923966135417024}, {'source': '转账', 'target': '跨行同名', 'value': 0.181364122490079}, {'source': '转账', 'target': '跨行异名', 'value': 0.159151596119442}],
+                label:{formatter:"{b} {c}"},
+                lineStyle: {
+                    color: 'source',
+                    curveness: 0.5,
+                }
+            }
+        ]
+    }
